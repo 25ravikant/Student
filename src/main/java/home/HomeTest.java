@@ -46,19 +46,19 @@ public class HomeTest {
                     System.out.print("Enter Class :");
                     String classNa = s1.nextLine();
 
-                    System.out.print("Enter Student New Email :");
+                    System.out.print("Enter Student Email :");
                     String stuEmail = s1.nextLine();
 
-                    System.out.print("Enter Student New Phone :");
+                    System.out.print("Enter Student Phone :");
                     String stuPhone = s1.nextLine();
 
-                    System.out.print("Enter Student New Street :");
+                    System.out.print("Enter Student Street :");
                     String stuStreet = s1.nextLine();
 
-                    System.out.print("Enter Student New Pin :");
+                    System.out.print("Enter Student Pin :");
                     String stuPin = s1.nextLine();
 
-                    System.out.print("Enter Student New City :");
+                    System.out.print("Enter Student City :");
                     String stuCity = s1.nextLine();
 
                     AddressModel ad = new AddressModel( stuEmail,stuPhone,stuStreet,stuPin,stuCity);
