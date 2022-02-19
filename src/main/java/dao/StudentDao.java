@@ -15,6 +15,8 @@ public class StudentDao {
     public StudentDao() {
 
     }
+
+    //Save Student Data to Database
     public static int saveStudent(StudentModel st) {
         int status =0;
 
@@ -40,6 +42,7 @@ public class StudentDao {
         return status;
     }
 
+    //Search Student Data By Roll No
     public static ArrayList<StudentModel> searchN(int roll) {
         ArrayList<StudentModel> list = new ArrayList<>();
 
@@ -74,7 +77,7 @@ public class StudentDao {
 
         return list;
     }
-
+// Delete Student Data By Roll No.
     public static int deleteStudent(int roll) {
         int status = 0;
         try {
@@ -91,6 +94,7 @@ public class StudentDao {
         return status;
     }
 
+    //Update Student Data By Roll No.
     public static int updateStudent(StudentModel sm) {
         int status = 0;
         try {

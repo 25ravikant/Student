@@ -7,6 +7,7 @@ public class MySqlConnection {
     Connection conn = null;
     public static Connection sqlConnect() {
 
+        //Established Connection to database
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentinfo?useSSL=true","root","root");

@@ -11,7 +11,7 @@ public class StudentService {
     public StudentService() {
 
     }
-
+//  Save Method for pass Student Data to StudentDao
     public static int saveStudent(StudentModel st) {
 
         StudentDao studentDao = new StudentDao();
@@ -20,6 +20,7 @@ public class StudentService {
 
     }
 
+    //Search Method for Search Student By Roll No.
     public static ArrayList<StudentModel> searchRoll(int roll) {
 
         ArrayList<StudentModel> list = new ArrayList<>();
@@ -28,6 +29,7 @@ public class StudentService {
 
     }
 
+    //Delete Method for Delete Student Data By Roll No.
     public static int deleteByRoll(int roll) {
 
         StudentDao studentDao = new StudentDao();
@@ -36,6 +38,7 @@ public class StudentService {
 
     }
 
+    //Update Method for Update Student Data By Roll No.
     public static int update(StudentModel sm) {
 
         StudentDao studentDao = new StudentDao();
